@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ferramenta de visualização de dados interativa e moderna. Crie gráficos personalizados e compartilhe resultados.">
+    <meta name="keywords" content="visualização de dados, gráficos, Chart.js, interativo, moderno, dados, análise">
+    <meta name="author" content="Seu Nome">
+    <meta property="og:title" content="Ferramenta de Visualização de Dados">
+    <meta property="og:description" content="Crie gráficos interativos e personalizados com nossa ferramenta de visualização de dados.">
+    <meta property="og:image" content="URL da imagem de pré-visualização">
+    <meta property="og:url" content="URL do seu site">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Ferramenta de Visualização de Dados">
+    <meta name="twitter:description" content="Crie gráficos interativos e personalizados com nossa ferramenta de visualização de dados.">
+    <meta name="twitter:image" content="URL da imagem de pré-visualização">
+    <meta name="twitter:site" content="@seuTwitter">
+    <title>Visualização Interativa de Dados</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script defer src="scripts.js"></script>
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-SEU_CODIGO"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-SEU_CODIGO');
+    </script>
+    <!-- Fim do Google Analytics -->
+</head>
+<body>
+    <header>
+        <h1>Visualização Interativa de Dados</h1>
+    </header>
+    <main>
+        <section id="configuracao">
+            <h2>Configurar Gráfico</h2>
+            <div class="input-group">
+                <label for="tipoGrafico">Tipo de Gráfico:</label>
+                <select id="tipoGrafico">
+                    <option value="bar">Gráfico de Barras</option>
+                    <option value="line">Gráfico de Linhas</option>
+                    <option value="pie">Gráfico de Pizza</option>
+                </select>
+            </div>
+            <div class="input-group">
+                <label for="labels">Nomes:</label>
+                <input type="text" id="labels" placeholder="Ex.: Janeiro,Fevereiro,Março">
+            </div>
+            <div class="input-group">
+                <label for="dados">Valores:</label>
+                <input type="text" id="dados" placeholder="Ex.: 1000,2000,3000">
+            </div>
+            <button id="adicionarGrafico">Adicionar Gráfico</button>
+        </section>
+        <section id="visualizacao">
+            <h2>Gráfico Gerado</h2>
+            <div id="chart-area" class="chart-container">
+                <canvas id="meuGrafico"></canvas>
+            </div>
+            <button id="salvarGrafico" style="display: none;">Salvar Gráfico como Imagem</button>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Visualização Interativa de Dados. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

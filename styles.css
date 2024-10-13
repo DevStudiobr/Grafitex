@@ -1,0 +1,152 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Variables for easy customization */
+:root {
+    --bg-color: #f9f9f9;
+    --text-color: #333333;
+    --accent-color: #6200ea;
+    --header-footer-bg: #6200ea;
+    --header-footer-text: #ffffff;
+    --card-bg: #ffffff;
+    --card-border: #e0e0e0;
+    --input-bg: #ffffff;
+    --input-border: #cccccc;
+    --button-bg: #6200ea;
+    --button-text: #ffffff;
+}
+
+/* Global Styles */
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+/* Header and Footer */
+header, footer {
+    background-color: var(--header-footer-bg);
+    color: var(--header-footer-text);
+    text-align: center;
+    padding: 1.5em 0;
+}
+
+/* Main Content */
+main {
+    padding: 2em;
+    text-align: center;
+}
+
+.chart-container {
+    position: relative;
+    width: 80%;
+    max-width: 900px;
+    margin: 1em auto;
+    background: var(--card-bg);
+    padding: 20px;
+    border: 1px solid var(--card-border);
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+canvas {
+    width: 100% !important;
+    max-height: 400px;
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: var(--accent-color);
+}
+
+/* Form Inputs and Buttons */
+.input-group {
+    margin-bottom: 1em;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5em;
+    font-weight: bold;
+}
+
+input, select, button {
+    font-family: 'Montserrat', sans-serif;
+    margin: 10px 0;
+    padding: 0.5em;
+    border-radius: 5px;
+    border: 1px solid var(--input-border);
+    background-color: var(--input-bg);
+    width: 100%;
+    max-width: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+button {
+    background-color: var(--button-bg);
+    color: var(--button-text);
+    cursor: pointer;
+    border: none;
+}
+
+button:hover {
+    background-color: #5315b8;
+}
+
+/* Metadata for Search Engines and Social Media */
+meta[name="description"] {
+    content: "Ferramenta de visualização de dados interativa e moderna. Crie gráficos personalizados e compartilhe resultados.";
+}
+
+meta[name="keywords"] {
+    content: "visualização de dados, gráficos, Chart.js, interativo, moderno, dados, análise";
+}
+
+meta[name="author"] {
+    content: "Seu Nome";
+}
+
+meta[property="og:title"] {
+    content: "Ferramenta de Visualização de Dados";
+}
+
+meta[property="og:description"] {
+    content: "Crie gráficos interativos e personalizados com nossa ferramenta de visualização de dados.";
+}
+
+meta[property="og:image"] {
+    content: "URL da imagem de pré-visualização";
+}
+
+meta[property="og:url"] {
+    content: "URL do seu site";
+}
+
+meta[name="twitter:card"] {
+    content: "summary_large_image";
+}
+
+meta[name="twitter:title"] {
+    content: "Ferramenta de Visualização de Dados";
+}
+
+meta[name="twitter:description"] {
+    content: "Crie gráficos interativos e personalizados com nossa ferramenta de visualização de dados.";
+}
+
+meta[name="twitter:image"] {
+    content: "URL da imagem de pré-visualização";
+}
+
+meta[name="twitter:site"] {
+    content: "@seuTwitter";
+}
