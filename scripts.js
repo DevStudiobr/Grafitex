@@ -39,6 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
         
         const options = {
             responsive: true,
+            maintainAspectRatio: false, // Ensure the chart scales properly
             plugins: {
                 legend: {
                     display: true,
