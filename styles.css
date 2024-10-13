@@ -1,11 +1,3 @@
-/* Basic Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Variables for easy customization */
 :root {
     --bg-color: #f9f9f9;
     --text-color: #333333;
@@ -20,7 +12,6 @@
     --button-text: #ffffff;
 }
 
-/* Global Styles */
 body {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
@@ -29,7 +20,6 @@ body {
     color: var(--text-color);
 }
 
-/* Header and Footer */
 header, footer {
     background-color: var(--header-footer-bg);
     color: var(--header-footer-text);
@@ -37,7 +27,6 @@ header, footer {
     padding: 1.5em 0;
 }
 
-/* Main Content */
 main {
     padding: 2em;
     text-align: center;
@@ -57,7 +46,7 @@ main {
 
 canvas {
     width: 100% !important;
-    max-height: 400px;
+    height: 400px !important; /* Fix height to prevent compression */
 }
 
 h2 {
@@ -66,7 +55,6 @@ h2 {
     color: var(--accent-color);
 }
 
-/* Form Inputs and Buttons */
 .input-group {
     margin-bottom: 1em;
 }
@@ -100,53 +88,4 @@ button {
 
 button:hover {
     background-color: #5315b8;
-}
-
-/* Metadata for Search Engines and Social Media */
-meta[name="description"] {
-    content: "Ferramenta de visualização de dados interativa e moderna. Crie gráficos personalizados e compartilhe resultados.";
-}
-
-meta[name="keywords"] {
-    content: "visualização de dados, gráficos, Chart.js, interativo, moderno, dados, análise";
-}
-
-meta[name="author"] {
-    content: "Seu Nome";
-}
-
-meta[property="og:title"] {
-    content: "Ferramenta de Visualização de Dados";
-}
-
-meta[property="og:description"] {
-    content: "Crie gráficos interativos e personalizados com nossa ferramenta de visualização de dados.";
-}
-
-meta[property="og:image"] {
-    content: "URL da imagem de pré-visualização";
-}
-
-meta[property="og:url"] {
-    content: "URL do seu site";
-}
-
-meta[name="twitter:card"] {
-    content: "summary_large_image";
-}
-
-meta[name="twitter:title"] {
-    content: "Ferramenta de Visualização de Dados";
-}
-
-meta[name="twitter:description"] {
-    content: "Crie gráficos interativos e personalizados com nossa ferramenta de visualização de dados.";
-}
-
-meta[name="twitter:image"] {
-    content: "URL da imagem de pré-visualização";
-}
-
-meta[name="twitter:site"] {
-    content: "@seuTwitter";
 }
