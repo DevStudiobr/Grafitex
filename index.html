@@ -20,16 +20,21 @@
     <link rel="stylesheet" href="styles.css">
     <script defer src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script defer src="scripts.js"></script>
-    <!-- Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-SEU_CODIGO"></script>
+    <!-- Matomo -->
     <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'G-SEU_CODIGO');
+      var _paq = window._paq = window._paq || [];
+      /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+      _paq.push(['trackPageView']);
+      _paq.push(['enableLinkTracking']);
+      (function() {
+        var u="https://grafitex.matomo.cloud/";
+        _paq.push(['setTrackerUrl', u+'matomo.php']);
+        _paq.push(['setSiteId', '1']);
+        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+        g.async=true; g.src='https://cdn.matomo.cloud/grafitex.matomo.cloud/matomo.js'; s.parentNode.insertBefore(g,s);
+      })();
     </script>
-    <!-- Fim do Google Analytics -->
+    <!-- End Matomo Code -->
 </head>
 <body>
     <header>
@@ -68,4 +73,4 @@
         <p>&copy; 2024 Visualização Interativa de Dados. Todos os direitos reservados.</p>
     </footer>
 </body>
-</html>
+        </html>
